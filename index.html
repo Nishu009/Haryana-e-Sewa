@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haryana e-Sewa</title>
+  <style>
+    /* Reset and Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+    h1.section-title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2rem;
+      color: #0056b3;
+    }
+    .section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 {
+      background: #0056b3;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 1.3rem;
+    }
+    .card ul {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .card ul li {
+      margin-bottom: 10px;
+    }
+    .card ul li a {
+      text-decoration: none;
+      color: #333;
+      background: #f1f5f9;
+      display: block;
+      padding: 8px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .card ul li a:hover { background: #d9e9ff; }
+    .view-more {
+      text-align: center;
+      background: #d63031;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 1rem;
+      border-top: 1px solid #ddd;
+    }
+    .view-more:hover { background: #c0392b; }
+    .app-card {
+      background: #fff;
+      border: 1px solid #cce0ff;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      color: #0056b3;
+      font-weight: bold;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+      transition: background 0.3s;
+    }
+    .app-card:hover { background: #e6f0ff; }
+    /* Header */
+    header {
+      background: #0056b3;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      height: 40px;
+      margin-right: 15px;
+    }
+    header .logo-text {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+    .whatsapp-float:hover { background: #1ebe5d; }
+  </style>
+</head>
+
+<body>
+
+<!-- Header with Logo and Website Name -->
+<header>
+  <img src="logo.png" alt="Logo">
+  <div class="logo-text">Haryana e-Sewa</div>
+</header>
+
+<!-- Section 1: Jobs -->
+<h1 class="section-title">सरकारी नौकरियां | Government Jobs</h1>
+<div class="section">
+  <div class="cards-container">
+
+    <div class="card"><h3>10th Pass Jobs</h3><ul><li><a href="#">रेलवे ग्रुप डी भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>12th Pass Jobs</h3><ul><li><a href="#">SSC CHSL भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>ITI Pass Jobs</h3><ul><li><a href="#">DRDO टेक्नीशियन भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>BA Pass Jobs</h3><ul><li><a href="#">UPSC सिविल सेवा</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>Diploma/B.Tech Jobs</h3><ul><li><a href="#">SSC JE भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>Banking Jobs</h3><ul><li><a href="#">SBI Clerk भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>Medical Jobs</h3><ul><li><a href="#">AIIMS Staff Nurse भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>Army Jobs</h3><ul><li><a href="#">भारतीय सेना अग्निवीर भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>Upcoming Jobs</h3><ul><li><a href="#">SSC GD कांस्टेबल भर्ती</a></li></ul><a href="#" class="view-more">View More</a></div>
+
+  </div>
+</div>
+
+<!-- Section 2: Sarkari Yojana -->
+<h1 class="section-title">सरकारी योजना | Government Schemes</h1>
+<div class="section">
+  <div class="cards-container">
+
+    <div class="card"><h3>बेटी की योजना</h3><ul><li><a href="#">बेटी बचाओ बेटी पढ़ाओ</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>महिला योजना</h3><ul><li><a href="#">महिला सम्मान योजना</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>छात्रों की योजना</h3><ul><li><a href="#">PM छात्रवृत्ति योजना</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>लोन वाली योजना</h3><ul><li><a href="#">PM मुद्रा योजना</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>गरीब की योजना</h3><ul><li><a href="#">PM गरीब कल्याण योजना</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>नई योजना</h3><ul><li><a href="#">स्टार्टअप योजना 2025</a></li></ul><a href="#" class="view-more">View More</a></div>
+    <div class="card"><h3>पीएम योजना</h3><ul><li><a href="#">PM आवास योजना</a></li></ul><a href="#" class="view-more">View More</a></div>
+
+  </div>
+</div>
+
+<!-- Section 3: Sarkari Apps -->
+<h1 class="section-title">सरकारी ऐप्स | Government Apps</h1>
+<div class="section">
+  <div class="cards-container">
+
+    <div class="app-card">mAadhaar</div>
+    <div class="app-card">Mera Ration 2.0</div>
+    <div class="app-card">PMKISAN GoI</div>
+    <div class="app-card">AwaasApp</div>
+    <div class="app-card">UMANG</div>
+    <div class="app-card">DigiLocker</div>
+    <div class="app-card">ABHA Health ID</div>
+    <div class="app-card">Aarogya Setu</div>
+
+  </div>
+</div>
+
+<!-- WhatsApp Join Button -->
+<a href="https://chat.whatsapp.com/" class="whatsapp-float" target="_blank">
+  Join WhatsApp Group
+</a>
+
+</body>
+</html>
